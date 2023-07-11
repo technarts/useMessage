@@ -1,6 +1,5 @@
 import * as React from "react";
 
-
 export type MessageBoxContextType = React.ReactElement | null;
 
 export const MessageBoxContext = React.createContext([

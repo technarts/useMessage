@@ -1,11 +1,10 @@
 import * as React from "react";
 
-import {MessageBoxContext} from "contexts";
-import MessageBox, {MessageBoxProps} from "components/MessageBox";
+import {MessageBoxContext} from "../contexts";
+import MessageBox, {MessageBoxProps} from "./MessageBox";
 
 const useMsg = () => {
   const [_, setMsgBox] = React.useContext(MessageBoxContext);
-
   return (args: MessageBoxProps) => {
     setMsgBox(
       <MessageBox

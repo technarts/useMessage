@@ -1,6 +1,6 @@
 {
   "name": "@technarts/use-message",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -33,5 +33,9 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
 }

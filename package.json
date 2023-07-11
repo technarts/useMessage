@@ -1,0 +1,29 @@
+{
+  "name": "usemessage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "tsc",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+  },
+  "keywords": [],
+  "author": "technarts",
+  "license": "ISC",
+  "dependencies": {
+    "@mui/icons-material": "^5.13.7",
+    "@technarts/planebutton": "^1.0.2",
+    "@types/react": "^18.2.14",
+    "react": "^18.2.0",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^18.2.6"
+  }
+}
